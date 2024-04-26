@@ -30,10 +30,10 @@ const SignUpForm = () => {
   </Form.Group>
 
   <Form.Group controlId="password2">
-    <Form.Label className="d-none">Confirm Password</Form.Label>
+    <Form.Label className="d-none">Re-enter your password</Form.Label>
     <Form.Control
         type="password"
-        placeholder="Re-enter Your Password"
+        placeholder="Re-enter your password"
         name="password2"
     />
   </Form.Group>
@@ -41,7 +41,7 @@ const SignUpForm = () => {
   <Button 
         className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
         type="submit">
-    Register
+    R E G I S T E R
   </Button>
 </Form>
 
