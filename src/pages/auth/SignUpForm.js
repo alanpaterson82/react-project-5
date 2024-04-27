@@ -49,7 +49,7 @@ const SignUpForm = () => {
     <Row className={styles.Row}>
       <Col className="my-auto py-2 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
-          <h1 className={styles.Header}>Register</h1>
+          <h1 className={styles.Header}>sign up</h1>
 
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
@@ -87,11 +87,11 @@ const SignUpForm = () => {
             ))}
 
             <Form.Group controlId="password2">
-              <Form.Label className="d-none">Re-enter your password</Form.Label>
+              <Form.Label className="d-none">Confirm password</Form.Label>
               <Form.Control
                 className={styles.Input}
                 type="password"
-                placeholder="Re-enter your password"
+                placeholder="Confirm password"
                 name="password2"
                 value={password2}
                 onChange={handleChange}
@@ -107,7 +107,7 @@ const SignUpForm = () => {
               className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`}
               type="submit"
             >
-              R E G I S T E R
+              Sign up
             </Button>
             {errors.non_field_errors?.map((message, idx) => (
               <Alert key={idx} variant="warning" className="mt-3">
@@ -119,7 +119,7 @@ const SignUpForm = () => {
 
         <Container className={`mt-3 ${appStyles.Content}`}>
           <Link className={styles.Link} to="/signin">
-            Already a burger lover? <span>Login</span>
+            Already have an account? <span>Sign in</span>
           </Link>
         </Container>
       </Col>

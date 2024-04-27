@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/burger.jpg";
-import styles from '../styles/NavBar.module.css'
+import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
@@ -10,7 +10,7 @@ const NavBar = () => {
       <Container>
         <NavLink to="/">
           <Navbar.Brand>
-            <img src={logo} alt="logo" height="100" />
+            <img src={logo} alt="logo" height="150" />
           </Navbar.Brand>
         </NavLink>
         <Navbar.Text>
@@ -30,16 +30,16 @@ const NavBar = () => {
             <NavLink
               className={styles.NavLink}
               activeClassName={styles.Active}
-              to="/login"
+              to="/signin"
             >
-              <i className="fa-solid fa-utensils"></i>Login
+              <i className="fa-solid fa-utensils"></i>Sign in
             </NavLink>
             <NavLink
-              to="/register"
+              to="/signup"
               className={styles.NavLink}
               activeClassName={styles.Active}
             >
-              <i className="fa-solid fa-drumstick-bite"></i>Register
+              <i className="fa-solid fa-drumstick-bite"></i>Sign up
             </NavLink>
           </Nav>
         </Navbar.Collapse>
