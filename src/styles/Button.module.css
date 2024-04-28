@@ -1,69 +1,69 @@
 .Button {
-    font-size: 0.8rem;
-    align-self: center;
-    border-radius: 100px;
-    border-color: transparent;
-    padding: 4px 10px;
-    margin-left: 2px;
-    margin-right: 2px;
-    min-width: 75px;
-  }
-  
-  .Button:hover {
-    opacity: 0.8;
-    border-color: transparent;
-    cursor: pointer;
-  }
-  
-  .Button:hover:active {
-    background-color: #e76e27 !important;
-  }
-  
-  .Button:active {
-    background-color: #cf5d1a !important;
-  }
-  
-  .Button:focus {
-    background-color: #b23e21;
-  }
-  
-  .Wide {
-    padding: 10px 50px;
-    width: 100%;
-  }
-  
-  .Blue,
-  .BlueOutline:hover,
-  .Bright:hover {
-    background-color: #f37e10;
-    color: #fdf9f9;
-  }
-  
-  .BlueOutline,
-  .Blue:hover {
-    /* border: 1px solid #2142b2; */
-    background-color: #f7ebeb;
-    color: #f14729;
-  }
-  
-  .Black,
-  .BlackOutline:hover {
-    /* background-color: #242a3d;
-    color: white; */
-    background-color: #242a3d;
-    color: rgb(14, 15, 15);
-  }
-  
-  .Black:hover,
-  .BlackOutline {
-    /* background-color: #dadadf;
-    color: #242a3d;
-    border-color: #242a3d; */
-    background-color: rgb(7, 7, 7);
-    color: #242a3d;
-  }
-  
-  .Bright {
-    background-color: #f79185;
-    color: #0f0f0f;
-  }
+  font-size: 0.8rem;
+  align-self: center;
+  border-radius: 100px;
+  border-color: transparent;
+  padding: 4px 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  min-width: 75px;
+}
+
+.Button:hover {
+  opacity: 0.8;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.Button:hover:active {
+  background-color: #e76e27 !important;
+}
+
+.Button:active {
+  background-color: #cf5d1a !important;
+}
+
+.Button:focus {
+  background-color: #b23e21;
+}
+
+.Wide {
+  padding: 10px 50px;
+  width: 100%;
+}
+
+.Blue,
+.BlueOutline:hover,
+.Bright:hover {
+  background-color: #f37e10;
+  color: #fdf9f9;
+}
+
+.BlueOutline,
+.Blue:hover {
+  /* border: 1px solid #2142b2; */
+  background-color: #f7ebeb;
+  color: #f14729;
+}
+
+.Black,
+.BlackOutline:hover {
+  /* background-color: #242a3d;
+  color: white; */
+  background-color: #242a3d;
+  color: rgb(14, 15, 15);
+}
+
+.Black:hover,
+.BlackOutline {
+  /* background-color: #dadadf;
+  color: #242a3d;
+  border-color: #242a3d; */
+  background-color: rgb(7, 7, 7);
+  color: #242a3d;
+}
+
+.Bright {
+  background-color: #f79185;
+  color: #0f0f0f;
+}
