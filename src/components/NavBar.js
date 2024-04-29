@@ -32,7 +32,7 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/posts/create"
     >
-      <i className="fa-solid fa-carrot"></i>ADD POST
+      <i className="fa-solid fa-carrot"></i><strong>ADD POST</strong>
     </NavLink>
   );
   const loggedInIcons = (
@@ -42,17 +42,17 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/feed"
       >
-        <i className="fa-solid fa-list-ul"></i>Feed
+        <i className="fa-solid fa-list-ul"></i><strong>Feed</strong>
       </NavLink>
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
         to="/liked"
       >
-        <i className="fa-solid fa-pepper-hot"></i>Hot Stuff
+        <i className="fa-solid fa-pepper-hot"></i><strong>Hot Stuff</strong>
       </NavLink>
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
-        <i className="fa-solid fa-person-through-window"></i>Sign out
+        <i className="fa-solid fa-person-through-window"></i><strong>Sign out</strong>
       </NavLink>
       <NavLink
         className={styles.NavLink}
@@ -69,14 +69,14 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/signin"
       >
-        <i className="fa-solid fa-utensils"></i>Sign in
+        <i className="fa-solid fa-utensils"></i><strong>Sign in</strong>
       </NavLink>
       <NavLink
         to="/signup"
         className={styles.NavLink}
         activeClassName={styles.Active}
       >
-        <i className="fa-solid fa-drumstick-bite"></i>Sign up
+        <i className="fa-solid fa-drumstick-bite"></i><strong>Sign up</strong>
       </NavLink>
     </>
   );
@@ -92,7 +92,7 @@ const NavBar = () => {
         <NavLink to="/">
           <Navbar.Brand>
             <img src={logo} alt="logo" height="150" />
-            <h4>Mince 'n' Patties</h4>
+            <h4><strong>Mince 'n' Patties</strong></h4>
           </Navbar.Brand>
         </NavLink>
         {currentUser && addPostIcon}
@@ -109,7 +109,7 @@ const NavBar = () => {
               activeClassName={styles.Active}
               to="/"
             >
-              <i className="fa-solid fa-burger"></i>Home
+              <i className="fa-solid fa-burger"></i><strong>Home</strong>
             </NavLink>
 
             {currentUser ? loggedInIcons : loggedOutIcons}
