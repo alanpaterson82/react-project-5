@@ -15,9 +15,11 @@ import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
+import { useRedirect } from "../../hooks/useRedirect";
 
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
+  useRedirect("loggedIn");
 
   const [signInData, setSignInData] = useState({
     username: "",
@@ -30,10 +32,11 @@ function SignInForm() {
   const history = useHistory();
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     try {
-      const {data} = await axios.post("/dj-rest-auth/login/", signInData);
-      setCurrentUser(data.user)
-      history.push("/");
+      const { data } = await axios.post("/dj-rest-auth/login/", signInData);
+      setCurrentUser(data.user);
+      history.goBack();
     } catch (err) {
       setErrors(err.response?.data);
     }
@@ -100,7 +103,7 @@ function SignInForm() {
         </Container>
         <Container className={`mt-3 ${appStyles.Content}`}>
           <Link className={styles.Link} to="/signup">
-            Consider yourself a REAL burger lover? <span>Sign up now!</span>
+          Consider yourself a REAL burger lover? <span>Sign up now!</span>
           </Link>
         </Container>
       </Col>
@@ -110,7 +113,7 @@ function SignInForm() {
       >
         <Image
           className={`${appStyles.FillerImage}`}
-          src={"https://res.cloudinary.com/dmnol3krk/image/upload/v1714219266/burger-on-a-plate_girjku.jpg"}
+          src={"https://res.cloudinary.com/dmnol3krk/image/upload/v1714431300/media/images/burger-on-a-plate_t9ucwf.jpg"}
         />
       </Col>
     </Row>
