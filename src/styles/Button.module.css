@@ -50,8 +50,8 @@
 .BlackOutline:hover {
   /* background-color: #242a3d;
   color: white; */
-  background-color: #242a3d;
-  color: rgb(14, 15, 15);
+  background-color: #ad5439;
+  color: rgb(194, 101, 47);
 }
 
 .Black:hover,
@@ -59,7 +59,7 @@
   /* background-color: #dadadf;
   color: #242a3d;
   border-color: #242a3d; */
-  background-color: rgb(7, 7, 7);
+  background-color: rgb(218, 63, 63);
   color: #242a3d;
 }
 
